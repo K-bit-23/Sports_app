@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 
 export default function DashboardScreen() {
@@ -8,30 +8,21 @@ export default function DashboardScreen() {
   };
 
   return (
-    <ImageBackground
-      source={require('@/assets/images/sports-background.jpg')}
-      style={styles.background}
-    >
-      <View style={styles.container}>
-        <Text style={styles.title}>Dashboard</Text>
-        <TouchableOpacity style={styles.cameraButton} onPress={handleCameraPress}>
-          <IconSymbol size={40} name="camera.fill" color="white" />
-        </TouchableOpacity>
-      </View>
-    </ImageBackground>
+    <View style={styles.container}>
+      <Text style={styles.title}>Dashboard</Text>
+      <TouchableOpacity style={styles.cameraButton} onPress={handleCameraPress}>
+        <IconSymbol size={40} name="camera.fill" color="white" />
+      </TouchableOpacity>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-    resizeMode: 'cover',
-  },
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(0,0,0,0.5)',
+    backgroundColor: 'rgba(0,0,0,0.8)',
   },
   title: {
     fontSize: 30,
