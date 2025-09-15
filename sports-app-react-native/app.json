@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "sports-app-react-native",
-    "slug": "sports-app-react-native",
+    "name": "Sports Fanatics",
+    "slug": "sports-fanatics",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "sportsappreactnative",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "description": "The ultimate app for sports fans! Get live scores, news, and updates on your favorite teams and leagues.",
     "ios": {
       "supportsTablet": true
     },
