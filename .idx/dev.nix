@@ -26,7 +26,7 @@
       enable = true;
       previews = {
         web = {
-          command = ["sh", "-c", "cd sports-app-react-native && npm run web"];
+          command = ["sh" "-c" "cd sports-app-react-native && npm run web"];
           manager = "web";
           env = {
             PORT = "$PORT";
