@@ -24,6 +24,20 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="square.grid.2x2.fill" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="rewards"
+        options={{
+          title: 'Rewards',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="gift.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: 'Settings',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="gearshape.fill" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }
